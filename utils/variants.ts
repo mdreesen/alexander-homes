@@ -23,3 +23,16 @@ export const itemVariants: Variants = {
         },
     },
 };
+
+export const cardVariants: Variants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 150,
+        damping: 12,
+      }
+    },
+  };
