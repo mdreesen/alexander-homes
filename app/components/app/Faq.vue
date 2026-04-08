@@ -29,7 +29,7 @@ const toggle = (i: number) => {
   <section id="faq" class="bg-white text-black py-32 px-6 md:px-12 border-t border-white/5">
     <div class="max-w-4xl mx-auto">
       
-      <div class="mb-20">
+      <div>
         <span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Information</span>
         <baseHeaderSection text="Common<br>Questions." />
         <div class="h-1 w-24 bg-ah-lime"></div>

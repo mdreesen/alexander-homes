@@ -1,0 +1,1 @@
+import{f as t,o as n,c as a}from"./CTNyVH99.js";const c=["innerHTML"],o=t({__name:"HeaderSection",props:{text:{type:String,default:"One"}},setup(e){return(r,s)=>(n(),a("h2",{class:"text-[clamp(2.5rem,8vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-8",innerHTML:e.text},null,8,c))}}),i=Object.assign(o,{__name:"BaseHeaderSection"});export{i as _};

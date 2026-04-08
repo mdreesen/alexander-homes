@@ -77,10 +77,13 @@ _sfc_main$3.setup = (props, ctx) => {
 const __nuxt_component_1 = /* @__PURE__ */ Object.assign(_export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]), { __name: "AppDescription" });
 const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_baseHeaderSection = __nuxt_component_0$2;
   _push(`<section${ssrRenderAttrs(mergeProps({
     id: "portfolio",
     class: "py-40 px-10 border-t border-white/5"
-  }, _attrs))}><div class="max-w-7xl mx-auto text-center"><h2 class="text-4xl font-bold uppercase tracking-widest text-ah-grey">Recent Work</h2><div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-50 italic uppercase font-black text-xl"><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div></div></div></section>`);
+  }, _attrs))}><div class="max-w-7xl mx-auto text-center">`);
+  _push(ssrRenderComponent(_component_baseHeaderSection, { text: "Recent Work" }, null, _parent));
+  _push(`<div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-50 italic uppercase font-black text-xl"><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div><div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon </div></div></div></section>`);
 }
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
@@ -118,7 +121,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       _push(`<section${ssrRenderAttrs(mergeProps({
         id: "faq",
         class: "bg-white text-black py-32 px-6 md:px-12 border-t border-white/5"
-      }, _attrs))}><div class="max-w-4xl mx-auto"><div class="mb-20"><span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Information</span>`);
+      }, _attrs))}><div class="max-w-4xl mx-auto"><div><span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Information</span>`);
       _push(ssrRenderComponent(_component_baseHeaderSection, { text: "Common<br>Questions." }, null, _parent));
       _push(`<div class="h-1 w-24 bg-ah-lime"></div></div><div class="border-t border-white/10"><!--[-->`);
       ssrRenderList(faqs, (faq, i) => {
@@ -170,4 +173,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-BQ8OLMXO.mjs.map
+//# sourceMappingURL=index-DBs9WiZ2.mjs.map
