@@ -5,7 +5,7 @@
         <div v-gsap.from="{ x: -50, opacity: 0, duration: 1.2 }">
           <span class="text-ah-lime font-mono text-xs tracking-widest uppercase mb-4 block">Paint & Finishes</span>
           <!-- Ensure your H1 isn't being cut off by the top of the viewport -->
-          <baseHeader text="Surface. Perfected." />
+          <baseHeader text="Surface.<br>Perfected." />
           <p class="text-ah-grey text-lg max-w-md leading-relaxed">
             Alexander Homes specializes in high-spec painting and architectural coatings. We define the final layer of your legacy.
           </p>

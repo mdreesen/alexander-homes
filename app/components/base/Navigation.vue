@@ -3,15 +3,15 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 
 const items = computed<NavigationMenuItem[]>(() => [{
   label: 'Main',
-  to: '/dashboard',
-  // icon: 'i-lucide-book-open',
+  to: '/',
+},{
+  label: 'About',
+  to: '/about',
 }, {
   label: 'Projects',
   to: '/projects',
-  // icon: 'mdi-light:account',
 }, {
   label: 'Contact',
-  // icon: 'i-simple-icons-figma',
   to: '/contact',
 }])
 </script>
@@ -19,7 +19,6 @@ const items = computed<NavigationMenuItem[]>(() => [{
 <template>
   <UHeader mode="slideover" class="fixed w-full border-none">
     <template #title>
-      <!-- Logo/Brand Name -->
       <NuxtLink to="/" class="flex items-center text-2xl font-extrabold h-10">
         <NuxtImg class="h-10 md:h-14 w-auto object-contain"
           alt="Alexander Homes Logo" format="webp" width="200px" height="200px" src="/images/logo.webp" loading="lazy"
