@@ -1,34 +1,29 @@
 <template>
-        <section class="h-screen flex flex-col justify-center px-12 relative overflow-hidden">
-      <div class="z-10">
-        <h1 v-gsap.from="{
-          y: 100,
-          opacity: 0,
-          duration: 1.5,
-          ease: 'power4.out',
-          stagger: 0.2
-        }" class="text-[clamp(4.5rem,18vw,14rem)] font-black leading-[0.80] uppercase tracking-tighter italic">
-          <div>Built to</div>
-          <div class="text-orange-600">Endure.</div>
-        </h1>
+      <section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 z-10 w-full max-w-7xl mx-auto">
+        
+        <div v-gsap.from="{ x: -50, opacity: 0, duration: 1.2 }">
+          <span class="text-ah-lime font-mono text-xs tracking-widest uppercase mb-4 block">Paint & Finishes</span>
+          <!-- Ensure your H1 isn't being cut off by the top of the viewport -->
+          <baseHeader text="Surface. Perfected." />
+          <p class="text-ah-grey text-lg max-w-md leading-relaxed">
+            Alexander Homes specializes in high-spec painting and architectural coatings. We define the final layer of your legacy.
+          </p>
+        </div>
 
-        <p v-gsap.from="{ opacity: 0, x: -50, duration: 1, delay: 0.8 }"
-          class="mt-10 max-w-xl text-zinc-400 font-medium leading-relaxed text-lg">
-          Advanced concrete solutions for residential and commercial developments. At Hahn Built, we bridge the gap between architectural vision and structural permanence.
-        </p>
-      </div>
+        <!-- Image Container -->
+        <div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10">
+          <NuxtImg class="w-full h-full object-cover opacity-80"
+          alt="Alexander Homes Logo" format="webp" width="200px" height="200px" src="/images/home_one.webp" loading="lazy"
+          fetch-priority="low" />
+          <!-- Note: Make sure your img path is correct to fix the broken icon in your screenshot -->
+          <!-- <img 
+            src="/hero-painting.webp" 
+            class="w-full h-full object-cover opacity-80"
+            alt="Professional Finish"
+          /> -->
+        </div>
 
-      <div v-gsap.to="{
-        scrollTrigger: {
-          trigger: 'section',
-          start: 'top top',
-          scrub: true
-        },
-        scale: 1.2
-      }" class="absolute right-0 top-0 w-1/2 h-full grayscale opacity-40">
-
-        <NuxtImg class="w-full h-full object-cover" src="/images/home_one.webp" format="webp" preload loading="eager"
-          fetch-priority="high" />
       </div>
     </section>
 </template>

@@ -1,50 +1,38 @@
 <template>
-    <section class="bg-[#0c0c0c] text-white py-32 px-10 border-t border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-24">
-                <baseHeader textOne="Everything" textTwo="You Need" />
-                <p class="mt-8 max-w-2xl text-zinc-500 text-lg leading-relaxed">
-                    From massive commercial foundations to custom architectural flatwork, Hahn Built delivers structural
-                    concrete that serves as the literal bedrock of Montana.
+    <section class="bg-white text-black py-32 px-6 md:px-12 border-t border-white/5 relative overflow-hidden">
+      
+      <div class="absolute left-4 top-163.75 -translate-y-1/2 -rotate-90 origin-left hidden lg:block">
+        <span class="text-[10px] font-mono text-zinc-800 uppercase tracking-[1em] whitespace-nowrap">
+          Standard Operating Procedure: AH-2026
+        </span>
+      </div>
+  
+      <div class="max-w-7xl mx-auto gap-20 flex justify-center items-center">
+        <div v-gsap.from="{ opacity: 0, y: 30, duration: 1, delay: 0.5 }">
+          <span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Our Ethos</span>
+          <baseHeaderSection text="Defining The<br>Final Layer." />
+  
+          <div class="space-y-10 max-w-xl">
+            <p class="text-ah-grey text-lg leading-relaxed">
+              Based in <span class="border-b border-black pb-1">Kalispell, Montana</span>, Alexander Homes is an architectural finishing firm. We believe the difference between a building and a home lies in the precision of the surface.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 border-t border-white/5 pt-10">
+              <div>
+                <h4 class="text-ah-lime font-mono text-[10px] uppercase tracking-widest mb-4">I. Preparation</h4>
+                <p class="text-xs text-ah-grey/60 leading-relaxed">
+                  80% of a museum-grade finish is invisible. Our multi-stage sanding and substrate priming ensure a flawless bond.
                 </p>
+              </div>
+              <div>
+                <h4 class="text-ah-lime font-mono text-[10px] uppercase tracking-widest mb-4">II. Execution</h4>
+                <p class="text-xs text-ah-grey/60 leading-relaxed">
+                  Utilizing high-volume, low-pressure (HVLP) systems and hand-brushed techniques for surgical accuracy.
+                </p>
+              </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 border-l border-t border-white/10">
-                <div v-for="(item, index) in services" :key="index" v-gsap.from="{
-                    scrollTrigger: { trigger: '.service-item', start: 'top 90%' },
-                    opacity: 0,
-                    y: 30,
-                    delay: index * 0.1
-                }"
-                    class="service-item group p-12 border-r border-b border-white/10 hover:bg-zinc-900/50 transition-colors duration-500">
-                    <baseCard :number="index" :icon="item.icon" :title="item.title" :description="item.description" />
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
-</template>
-
-<script setup>
-const services = [
-    {
-        title: 'Foundation Systems',
-        description: 'Precision-engineered pouring for residential estates and commercial hubs. We build the base that never shifts.',
-        icon: 'lucide:layers'
-    },
-    {
-        title: 'Architectural Flatwork',
-        description: 'Custom stamped and stained concrete that blurs the line between structural necessity and high-end design.',
-        icon: 'lucide:layout-grid'
-    },
-    {
-        title: 'Reinforcement & Steel',
-        description: 'Industrial-grade rebar integration and structural reinforcement for high-stress Montana environments.',
-        icon: 'lucide:shield-check'
-    },
-    {
-        title: 'Site Preparation',
-        description: 'Comprehensive excavation, grading, and compaction to ensure your concrete sits on a perfect foundation.',
-        icon: 'lucide:mountain'
-    }
-];
-</script>
+  </template>
