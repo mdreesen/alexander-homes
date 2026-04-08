@@ -17,8 +17,7 @@ interface _GlobalComponents {
   AppDescription: typeof import("../../app/components/app/Description.vue")['default']
   AppFaq: typeof import("../../app/components/app/Faq.vue")['default']
   AppHero: typeof import("../../app/components/app/Hero.vue")['default']
-  AppProjects: typeof import("../../app/components/app/Projects.vue")['default']
-  BaseCard: typeof import("../../app/components/base/Card.vue")['default']
+  AppRecentProjects: typeof import("../../app/components/app/RecentProjects.vue")['default']
   BaseFooter: typeof import("../../app/components/base/Footer.vue")['default']
   BaseHeader: typeof import("../../app/components/base/Header.vue")['default']
   BaseHeaderSection: typeof import("../../app/components/base/HeaderSection.vue")['default']
@@ -179,8 +178,7 @@ interface _GlobalComponents {
   LazyAppDescription: LazyComponent<typeof import("../../app/components/app/Description.vue")['default']>
   LazyAppFaq: LazyComponent<typeof import("../../app/components/app/Faq.vue")['default']>
   LazyAppHero: LazyComponent<typeof import("../../app/components/app/Hero.vue")['default']>
-  LazyAppProjects: LazyComponent<typeof import("../../app/components/app/Projects.vue")['default']>
-  LazyBaseCard: LazyComponent<typeof import("../../app/components/base/Card.vue")['default']>
+  LazyAppRecentProjects: LazyComponent<typeof import("../../app/components/app/RecentProjects.vue")['default']>
   LazyBaseFooter: LazyComponent<typeof import("../../app/components/base/Footer.vue")['default']>
   LazyBaseHeader: LazyComponent<typeof import("../../app/components/base/Header.vue")['default']>
   LazyBaseHeaderSection: LazyComponent<typeof import("../../app/components/base/HeaderSection.vue")['default']>

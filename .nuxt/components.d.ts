@@ -17,8 +17,7 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 export const AppDescription: typeof import("../app/components/app/Description.vue")['default']
 export const AppFaq: typeof import("../app/components/app/Faq.vue")['default']
 export const AppHero: typeof import("../app/components/app/Hero.vue")['default']
-export const AppProjects: typeof import("../app/components/app/Projects.vue")['default']
-export const BaseCard: typeof import("../app/components/base/Card.vue")['default']
+export const AppRecentProjects: typeof import("../app/components/app/RecentProjects.vue")['default']
 export const BaseFooter: typeof import("../app/components/base/Footer.vue")['default']
 export const BaseHeader: typeof import("../app/components/base/Header.vue")['default']
 export const BaseHeaderSection: typeof import("../app/components/base/HeaderSection.vue")['default']
@@ -179,8 +178,7 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const LazyAppDescription: LazyComponent<typeof import("../app/components/app/Description.vue")['default']>
 export const LazyAppFaq: LazyComponent<typeof import("../app/components/app/Faq.vue")['default']>
 export const LazyAppHero: LazyComponent<typeof import("../app/components/app/Hero.vue")['default']>
-export const LazyAppProjects: LazyComponent<typeof import("../app/components/app/Projects.vue")['default']>
-export const LazyBaseCard: LazyComponent<typeof import("../app/components/base/Card.vue")['default']>
+export const LazyAppRecentProjects: LazyComponent<typeof import("../app/components/app/RecentProjects.vue")['default']>
 export const LazyBaseFooter: LazyComponent<typeof import("../app/components/base/Footer.vue")['default']>
 export const LazyBaseHeader: LazyComponent<typeof import("../app/components/base/Header.vue")['default']>
 export const LazyBaseHeaderSection: LazyComponent<typeof import("../app/components/base/HeaderSection.vue")['default']>

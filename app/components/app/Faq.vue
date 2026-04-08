@@ -3,20 +3,20 @@ const activeIndex = ref<number | null>(null);
 
 const faqs = [
   {
-    q: "What types of concrete projects do you handle?",
-    a: "We specialize in high-durability residential foundations, commercial flatwork, architectural stamped concrete, and structural retaining walls designed for Montana’s freeze-thaw cycles."
+    q: "What is your standard for surface preparation?",
+    a: "Preparation is 80% of our process. We utilize dustless sanding systems, specialized chemical bonding primers, and high-intensity lighting to identify and eliminate substrate defects before the final coating is applied."
   },
   {
-    q: "What is your typical service area?",
-    a: "Based in Evergreen, we primarily serve the Flathead Valley, including Kalispell, Whitefish, Columbia Falls, and Bigfork. For large-scale commercial builds, we extend across Western Montana."
+    q: "How do you handle Montana's extreme climate shifts?",
+    a: "We utilize high-elasticity architectural coatings engineered for the freeze-thaw cycles of the Flathead Valley. These systems allow for thermal expansion and contraction without cracking or delamination."
   },
   {
-    q: "Are you licensed and insured in Montana?",
-    a: "Absolutely. Hahn Built is fully licensed, bonded, and carries comprehensive liability and worker's comp insurance. Safety and compliance are our structural bedrock."
+    q: "Do you offer specialized cabinetry or millwork finishes?",
+    a: "Yes. For fine finishes, we utilize HVLP (High Volume Low Pressure) spray systems in controlled environments to achieve a glass-smooth, factory-grade finish that standard brushes cannot replicate."
   },
   {
-    q: "How do you handle project estimates?",
-    a: "We provide detailed, transparent bids based on site-specific variables. This includes excavation needs, reinforcement requirements, and concrete PSI grades tailored to your project’s load."
+    q: "Are you licensed and insured for high-end residential work?",
+    a: "Alexander Homes is fully licensed, bonded, and carries comprehensive liability and worker's compensation insurance. We strictly adhere to all architectural and safety specifications for luxury estates."
   }
 ];
 
@@ -26,12 +26,13 @@ const toggle = (i: number) => {
 </script>
 
 <template>
-  <section class="bg-[#0c0c0c] text-white py-32 px-10">
+  <section id="faq" class="bg-white text-black py-32 px-6 md:px-12 border-t border-white/5">
     <div class="max-w-4xl mx-auto">
       
       <div class="mb-20">
-        <baseHeader textOne="Common" textTwo="Questions" />
-        <div class="h-1 w-24 bg-orange-600 hidden md:block"></div>
+        <span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Information</span>
+        <baseHeaderSection text="Common<br>Questions." />
+        <div class="h-1 w-24 bg-ah-lime"></div>
       </div>
 
       <div class="border-t border-white/10">
@@ -44,8 +45,8 @@ const toggle = (i: number) => {
             @click="toggle(i)"
             class="w-full py-10 flex items-center justify-between text-left group transition-all"
           >
-            <div class="flex items-center gap-8">
-              <span class="font-mono text-zinc-700 group-hover:text-orange-600 transition-colors">
+            <div class="flex items-center gap-6 md:gap-10">
+              <span class="font-mono text-ah-grey/20 group-hover:text-ah-lime transition-colors">
                 {{ (i + 1).toString().padStart(2, '0') }}
               </span>
               <span class="text-xl md:text-2xl font-bold uppercase tracking-tight group-hover:translate-x-2 transition-transform duration-500">
@@ -54,17 +55,17 @@ const toggle = (i: number) => {
             </div>
             
             <div class="relative w-6 h-6">
-              <div class="absolute inset-0 bg-white h-0.5 my-auto transition-transform duration-500" :class="{ 'rotate-180': activeIndex === i }"></div>
-              <div class="absolute inset-0 bg-white w-0.5 mx-auto transition-transform duration-500" :class="{ 'rotate-90 opacity-0': activeIndex === i }"></div>
+              <div class="absolute inset-0 bg-black h-0.5 my-auto transition-transform duration-500" :class="{ 'rotate-180': activeIndex === i }"></div>
+              <div class="absolute inset-0 bg-black w-0.5 mx-auto transition-transform duration-500" :class="{ 'rotate-90 opacity-0': activeIndex === i }"></div>
             </div>
           </button>
 
           <div 
             v-show="activeIndex === i"
             v-gsap.from="{ height: 0, opacity: 0, duration: 0.5, ease: 'power4.out' }"
-            class="pb-10 pl-16 md:pl-24 pr-10"
+            class="pb-10 pl-8 md:pl-18 pr-10"
           >
-            <p class="text-zinc-400 text-lg leading-relaxed max-w-2xl border-l-2 border-orange-600/30 pl-6">
+            <p class="text-ah-grey text-lg leading-relaxed max-w-2xl border-l border-ah-lime/30 pl-8">
               {{ faq.a }}
             </p>
           </div>

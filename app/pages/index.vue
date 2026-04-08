@@ -1,4 +1,12 @@
 <!-- pages/index.vue -->
+<script setup lang="ts">
+useHead({
+  title: 'Alexander Homes | Home',
+  meta: [
+    { name: 'Home', content: 'Alexander Homes Home.' },
+  ],
+});
+</script>
 <template>
   <div>
 
@@ -6,16 +14,9 @@
 
     <appDescription />
 
-    <section id="portfolio" class="py-40 px-10 border-t border-white/5">
-       <div class="max-w-7xl mx-auto text-center">
-          <h2 class="text-4xl font-bold uppercase tracking-widest text-ah-grey">Recent Work</h2>
-          <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-50 italic uppercase font-black text-xl">
-             <div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon</div>
-             <div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon</div>
-             <div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon</div>
-             <div class="aspect-square bg-white/5 flex items-center justify-center border border-white/5">Coming Soon</div>
-          </div>
-       </div>
-    </section>
+    <appRecentProjects />
+
+    <appFaq />
+
   </div>
 </template>

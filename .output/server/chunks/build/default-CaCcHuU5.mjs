@@ -1,7 +1,7 @@
 import * as vue from 'vue';
 import { mergeProps, defineComponent, computed, withCtx, unref, createVNode, toDisplayString, useSlots, useModel, watch, toRef, renderSlot, openBlock, createBlock, createCommentVNode, createTextVNode, mergeModels, resolveDynamicComponent, Fragment, renderList, toHandlers, withKeys, ref, createElementBlock, Teleport, toRefs, watchEffect, nextTick, normalizeProps, guardReactiveProps, normalizeStyle, withModifiers, watchPostEffect, mergeDefaults, reactive, toValue, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderSlot, ssrInterpolate, ssrRenderClass, ssrRenderVNode, ssrRenderList } from 'vue/server-renderer';
-import { _ as _export_sfc, a as __nuxt_component_0$2, c as __nuxt_component_2$1, z as _sfc_main$8$1, B as useRoute, x as useLocale, t as useAppConfig, v as useComponentUI, C as getSlotChildrenText, w as tv, D as _sfc_main$9$1, P as Primitive, q as useForwardPropsEmits, J as isArrayOfArray, I as _sfc_main$b$1, K as _sfc_main$c$1, H as _sfc_main$e, L as get, M as pickLinkProps, N as _sfc_main$a$1, y as usePortal, V as VisuallyHidden_default, F as useFieldGroup, G as useComponentIcons, e as useForwardExpose, r as useCollection, s as injectTooltipProviderContext, g as Presence_default, o as useEmitAsProps, T as Teleport_default, f as createContext, d as injectConfigProviderContext, h as getActiveElement, p as useForwardProps, i as isNullish, A as AUTOFOCUS_ON_MOUNT, j as focusFirst$1, k as getTabbableCandidates$1, l as focus, m as AUTOFOCUS_ON_UNMOUNT, E as EVENT_OPTIONS, n as getTabbableEdges } from './server.mjs';
+import { _ as _export_sfc, a as __nuxt_component_0$2, b as __nuxt_component_2$1, y as _sfc_main$8$1, z as useRoute, w as useLocale, s as useAppConfig, t as useComponentUI, B as getSlotChildrenText, v as tv, C as _sfc_main$9$1, P as Primitive, p as useForwardPropsEmits, I as isArrayOfArray, H as _sfc_main$b$1, J as _sfc_main$c$1, G as _sfc_main$e, K as get, L as pickLinkProps, M as _sfc_main$a$1, x as usePortal, V as VisuallyHidden_default, D as useFieldGroup, F as useComponentIcons, d as useForwardExpose, q as useCollection, r as injectTooltipProviderContext, f as Presence_default, n as useEmitAsProps, T as Teleport_default, e as createContext, c as injectConfigProviderContext, g as getActiveElement, o as useForwardProps, i as isNullish, A as AUTOFOCUS_ON_MOUNT, h as focusFirst$1, j as getTabbableCandidates$1, k as focus, l as AUTOFOCUS_ON_UNMOUNT, E as EVENT_OPTIONS, m as getTabbableEdges } from './server.mjs';
 import { k as defu, m as isEqual } from '../nitro/nitro.mjs';
 import { createReusableTemplate, reactivePick, refAutoReset, useVModel, useDebounceFn, useEventListener, useResizeObserver, unrefElement, useTimeoutFn, createSharedComposable, onKeyStroke, computedEager, createGlobalState } from '@vueuse/core';
 import { hideOthers } from 'aria-hidden';
@@ -11532,15 +11532,15 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const items = computed(() => [{
       label: "Main",
-      to: "/dashboard"
-      // icon: 'i-lucide-book-open',
+      to: "/"
+    }, {
+      label: "About",
+      to: "/about"
     }, {
       label: "Projects",
       to: "/projects"
-      // icon: 'mdi-light:account',
     }, {
       label: "Contact",
-      // icon: 'i-simple-icons-figma',
       to: "/contact"
     }]);
     return (_ctx, _push, _parent, _attrs) => {
@@ -11927,7 +11927,7 @@ const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_baseNavigation = __nuxt_component_0;
   const _component_baseFooter = __nuxt_component_1;
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "bg-ah-navy text-ah-white min-h-screen selection:bg-ah-lime/30 overflow-x-hidden" }, _attrs))}>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "text-ah-white min-h-screen selection:bg-ah-lime/30 overflow-x-hidden" }, _attrs))}>`);
   _push(ssrRenderComponent(_component_baseNavigation, null, null, _parent));
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(ssrRenderComponent(_component_baseFooter, null, null, _parent));
@@ -11942,4 +11942,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-DZ2LlHSr.mjs.map
+//# sourceMappingURL=default-CaCcHuU5.mjs.map
