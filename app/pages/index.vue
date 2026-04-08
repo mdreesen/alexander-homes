@@ -1,7 +1,6 @@
 <!-- pages/index.vue -->
 <template>
   <div class="bg-ah-navy min-h-screen text-white">
-    <TheNav />
 
     <!-- Added pt-32 (desktop) and pt-24 (mobile) to clear the fixed nav -->
     <section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32">
@@ -20,6 +19,9 @@
 
         <!-- Image Container -->
         <div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10">
+          <NuxtImg class="w-full h-full object-cover opacity-80"
+          alt="Alexander Homes Logo" format="webp" width="200px" height="200px" src="/images/home_one.webp" loading="lazy"
+          fetch-priority="low" />
           <!-- Note: Make sure your img path is correct to fix the broken icon in your screenshot -->
           <!-- <img 
             src="/hero-painting.webp" 

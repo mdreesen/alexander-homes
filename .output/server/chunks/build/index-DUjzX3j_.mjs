@@ -1,6 +1,6 @@
-import { resolveComponent, resolveDirective, mergeProps, useSSRContext } from 'vue';
-import { ssrRenderAttrs, ssrRenderComponent, ssrGetDirectiveProps, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
-import { _ as _export_sfc } from './server.mjs';
+import { _ as _export_sfc, c as __nuxt_component_2$1 } from './server.mjs';
+import { resolveDirective, mergeProps, useSSRContext } from 'vue';
+import { ssrRenderAttrs, ssrGetDirectiveProps, ssrRenderComponent, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
 import '../nitro/nitro.mjs';
 import 'node:http';
 import 'node:https';
@@ -30,11 +30,20 @@ import 'unhead/utils';
 
 const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_TheNav = resolveComponent("TheNav");
+  const _component_NuxtImg = __nuxt_component_2$1;
   const _directive_gsap = resolveDirective("gsap");
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "bg-ah-navy min-h-screen text-white" }, _attrs))}>`);
-  _push(ssrRenderComponent(_component_TheNav, null, null, _parent));
-  _push(`<section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32"><div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 z-10 w-full max-w-7xl mx-auto"><div${ssrRenderAttrs(ssrGetDirectiveProps(_ctx, _directive_gsap, { x: -50, opacity: 0, duration: 1.2 }, void 0, { from: true }))}><span class="text-ah-lime font-mono text-xs tracking-widest uppercase mb-4 block">Paint &amp; Finishes</span><h1 class="text-[clamp(2.5rem,8vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-8"> Surface.<br> <span class="text-ah-grey/40">Perfected.</span></h1><p class="text-ah-grey text-lg max-w-md leading-relaxed"> Alexander Homes specializes in high-spec painting and architectural coatings. We define the final layer of your legacy. </p></div><div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10"></div></div></section><section id="services" class="py-40 bg-white text-ah-navy"><div class="max-w-7xl mx-auto px-10"><div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-10"><h2 class="text-6xl font-black uppercase italic tracking-tighter leading-none"> Museum Grade<br>Applications. </h2><div class="h-1 w-24 bg-ah-lime mb-4"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-1 bg-ah-navy/10 border border-ah-navy/10"><!--[-->`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "bg-ah-navy min-h-screen text-white" }, _attrs))}><section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32"><div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 z-10 w-full max-w-7xl mx-auto"><div${ssrRenderAttrs(ssrGetDirectiveProps(_ctx, _directive_gsap, { x: -50, opacity: 0, duration: 1.2 }, void 0, { from: true }))}><span class="text-ah-lime font-mono text-xs tracking-widest uppercase mb-4 block">Paint &amp; Finishes</span><h1 class="text-[clamp(2.5rem,8vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-8"> Surface.<br> <span class="text-ah-grey/40">Perfected.</span></h1><p class="text-ah-grey text-lg max-w-md leading-relaxed"> Alexander Homes specializes in high-spec painting and architectural coatings. We define the final layer of your legacy. </p></div><div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10">`);
+  _push(ssrRenderComponent(_component_NuxtImg, {
+    class: "w-full h-full object-cover opacity-80",
+    alt: "Alexander Homes Logo",
+    format: "webp",
+    width: "200px",
+    height: "200px",
+    src: "/images/home_one.webp",
+    loading: "lazy",
+    "fetch-priority": "low"
+  }, null, _parent));
+  _push(`</div></div></section><section id="services" class="py-40 bg-white text-ah-navy"><div class="max-w-7xl mx-auto px-10"><div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-10"><h2 class="text-6xl font-black uppercase italic tracking-tighter leading-none"> Museum Grade<br>Applications. </h2><div class="h-1 w-24 bg-ah-lime mb-4"></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-1 bg-ah-navy/10 border border-ah-navy/10"><!--[-->`);
   ssrRenderList(["Interior Systems", "Exterior Shield", "Fine Finishes"], (s, i) => {
     _push(`<div class="group p-12 bg-white hover:bg-ah-navy transition-all duration-700"><span class="font-mono text-ah-lime block mb-20 text-sm">/0${ssrInterpolate(i + 1)}</span><h3 class="text-3xl font-black uppercase italic mb-4 group-hover:text-ah-lime">${ssrInterpolate(s)}</h3><p class="text-ah-navy/50 group-hover:text-white/60 text-sm leading-relaxed"> Rigorous preparation and multi-stage coating systems for enduring architectural beauty. </p></div>`);
   });
@@ -49,4 +58,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { index as default };
-//# sourceMappingURL=index-CMFGWO1w.mjs.map
+//# sourceMappingURL=index-DUjzX3j_.mjs.map

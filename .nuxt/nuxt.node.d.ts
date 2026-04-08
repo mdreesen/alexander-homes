@@ -1,6 +1,6 @@
 /// <reference types="v-gsap-nuxt" />
-/// <reference types="@nuxt/ui" />
 /// <reference types="@nuxt/image" />
+/// <reference types="@nuxt/ui" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference path="types/nitro-layouts.d.ts" />
