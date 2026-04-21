@@ -26,7 +26,7 @@ const toggle = (i: number) => {
 </script>
 
 <template>
-  <section id="faq" class="bg-white text-black py-32 px-6 md:px-12 border-t border-white/5">
+  <section id="faq" class="py-32 px-6 md:px-12 border-t border-white/5">
     <div class="max-w-4xl mx-auto">
       
       <div>
