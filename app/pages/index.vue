@@ -15,8 +15,6 @@ useSeoMeta({
 
     <appDescription />
 
-    <appRecentProjects />
-
     <appFaq />
 
   </div>

@@ -1,5 +1,5 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { computed, mergeProps, unref, withCtx, renderSlot, openBlock, createBlock, inject, toValue, createVNode, resolveDynamicComponent, ref, watch, toDisplayString, useModel, createTextVNode, createCommentVNode, mergeModels, defineComponent, h, Teleport, getCurrentInstance, toRefs, toHandlerKey, camelize, toRef, provide, watchEffect, markRaw, useSlots, hasInjectionContext, Comment, cloneVNode, shallowRef, resolveComponent, useAttrs, useTemplateRef, nextTick, Fragment, isRef, onServerPrefetch, defineAsyncComponent, createElementBlock, reactive, useSSRContext, shallowReactive, Suspense, createApp, renderList, useId, onErrorCaptured, effectScope, withModifiers, normalizeProps, guardReactiveProps, normalizeStyle, getCurrentScope, isReadonly, isShallow, isReactive, toRaw } from 'vue';
-import { s as serialize, k as defu, l as klona, m as isEqual, n as parseQuery, o as defuFn, q as hasProtocol, j as joinURL, r as parseURL, t as encodePath, v as decodePath, w as withQuery, x as isScriptProtocol, y as getContext, z as withTrailingSlash, A as withoutTrailingSlash, B as sanitizeStatusCode, C as withLeadingSlash, $ as $fetch$1, D as baseURL, E as hash, e as createError$1, F as executeAsync, G as encodeParam } from '../nitro/nitro.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { hasInjectionContext, inject, computed, mergeProps, unref, withCtx, renderSlot, openBlock, createBlock, toValue, createVNode, resolveDynamicComponent, ref, watch, toDisplayString, useModel, createTextVNode, createCommentVNode, mergeModels, defineComponent, h, Teleport, getCurrentInstance, toRefs, toHandlerKey, camelize, toRef, provide, watchEffect, markRaw, useSlots, Comment, cloneVNode, shallowRef, resolveComponent, useAttrs, useTemplateRef, nextTick, Fragment, isRef, onServerPrefetch, defineAsyncComponent, createElementBlock, reactive, useSSRContext, shallowReactive, Suspense, createApp, renderList, useId, onErrorCaptured, effectScope, withModifiers, normalizeProps, guardReactiveProps, normalizeStyle, getCurrentScope, isReadonly, isShallow, isReactive, toRaw } from 'vue';
+import { s as serialize, k as defu, l as klona, m as isEqual, n as parseQuery, o as defuFn, q as hasProtocol, j as joinURL, r as parseURL, t as encodePath, v as decodePath, w as getContext, x as withQuery, y as isScriptProtocol, z as withTrailingSlash, A as withoutTrailingSlash, B as sanitizeStatusCode, C as withLeadingSlash, $ as $fetch$1, D as baseURL, E as hash, e as createError$1, F as executeAsync, G as encodeParam } from '../nitro/nitro.mjs';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { Icon, getIcon, loadIcon as loadIcon$1, _api, addAPIProvider, setCustomIconsLoader } from '@iconify/vue';
 import colors from 'tailwindcss/colors';
@@ -10,7 +10,7 @@ import { reactiveOmit, reactivePick, useMounted, unrefElement, defaultWindow, on
 import { isClient, useTimeoutFn, useTimeout } from '@vueuse/shared';
 import { createTV } from 'tailwind-variants';
 import { getIconCSS } from '@iconify/utils/lib/css/icon';
-import { u as useHead$1, h as headSymbol } from '../routes/renderer.mjs';
+import { u as useSeoMeta$1, a as useHead$1, h as headSymbol } from '../routes/renderer.mjs';
 import 'node:http';
 import 'node:https';
 import 'node:events';
@@ -25,6 +25,7 @@ import 'ipx';
 import 'vue-bundle-renderer/runtime';
 import 'unhead/server';
 import 'devalue';
+import 'unhead/plugins';
 import 'unhead/utils';
 
 //#region src/utils.ts
@@ -14032,24 +14033,34 @@ function getRouteRules(arg) {
 }
 const _routes = [
   {
+    name: "projects-process",
+    path: "/projects/process",
+    component: () => import('./index-DT3uFQo9.mjs')
+  },
+  {
+    name: "projects-product",
+    path: "/projects/product",
+    component: () => import('./index-WC18Rssa.mjs')
+  },
+  {
     name: "about",
     path: "/about",
-    component: () => import('./about-BVMCkvmm.mjs')
+    component: () => import('./about-CBlBXukJ.mjs')
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-CnVSUlMO.mjs')
+    component: () => import('./contact-DVzil03b.mjs')
   },
   {
     name: "projects",
     path: "/projects",
-    component: () => import('./projects-BGyk4DMy.mjs')
+    component: () => import('./index-CvFD2klj.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DBs9WiZ2.mjs')
+    component: () => import('./index-BU0cKuoK.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -14408,6 +14419,10 @@ function injectHead(nuxtApp) {
 function useHead(input, options = {}) {
   const head = options.head || injectHead(options.nuxt);
   return useHead$1(input, { head, ...options });
+}
+function useSeoMeta(input, options = {}) {
+  const head = options.head || injectHead(options.nuxt);
+  return useSeoMeta$1(input, { head, ...options });
 }
 function definePayloadReducer(name, reduce) {
   {
@@ -21688,7 +21703,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = Object.assign(_sfc_main$3, { __name: "UApp" });
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-CaCcHuU5.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-CRzk_qMi.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
@@ -22071,5 +22086,5 @@ let entry;
 }
 const entry_default = ((ssrContext) => entry(ssrContext));
 
-export { AUTOFOCUS_ON_MOUNT as A, getSlotChildrenText as B, _sfc_main$9 as C, useFieldGroup as D, EVENT_OPTIONS as E, useComponentIcons as F, _sfc_main$e as G, _sfc_main$b as H, isArrayOfArray as I, _sfc_main$c as J, get as K, pickLinkProps as L, _sfc_main$a as M, Primitive as P, Teleport_default as T, VisuallyHidden_default as V, _export_sfc as _, __nuxt_component_0$2 as a, __nuxt_component_2$1 as b, injectConfigProviderContext as c, useForwardExpose as d, entry_default as default, createContext as e, Presence_default as f, getActiveElement as g, focusFirst as h, isNullish as i, getTabbableCandidates as j, focus as k, AUTOFOCUS_ON_UNMOUNT as l, getTabbableEdges as m, useEmitAsProps as n, useForwardProps as o, useForwardPropsEmits as p, useCollection as q, injectTooltipProviderContext as r, useAppConfig as s, useComponentUI as t, useHead as u, tv as v, useLocale as w, usePortal as x, _sfc_main$8 as y, useRoute as z };
+export { AUTOFOCUS_ON_MOUNT as A, useRoute as B, getSlotChildrenText as C, _sfc_main$9 as D, EVENT_OPTIONS as E, useFieldGroup as F, useComponentIcons as G, _sfc_main$e as H, _sfc_main$b as I, isArrayOfArray as J, _sfc_main$c as K, get as L, pickLinkProps as M, _sfc_main$a as N, Primitive as P, Teleport_default as T, VisuallyHidden_default as V, _export_sfc as _, __nuxt_component_0$2 as a, useSeoMeta as b, __nuxt_component_2$1 as c, injectConfigProviderContext as d, entry_default as default, useForwardExpose as e, createContext as f, Presence_default as g, getActiveElement as h, isNullish as i, focusFirst as j, getTabbableCandidates as k, focus as l, AUTOFOCUS_ON_UNMOUNT as m, getTabbableEdges as n, useEmitAsProps as o, useForwardProps as p, useForwardPropsEmits as q, useCollection as r, injectTooltipProviderContext as s, useAppConfig as t, useHead as u, useComponentUI as v, tv as w, useLocale as x, usePortal as y, _sfc_main$8 as z };
 //# sourceMappingURL=server.mjs.map

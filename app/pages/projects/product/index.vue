@@ -7,7 +7,7 @@ useSeoMeta({
     ogImage: '/images/logo.webp',
 });
 
-const { data: images } = await useFetch('/api/images/product')
+const images = [1]
 </script>
 
 <template>
@@ -20,10 +20,10 @@ const { data: images } = await useFetch('/api/images/product')
     </header>
 
     <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-8">
-      <div v-for="item, index in images" :key="index"
+      <div v-for="_, index in images" :key="index"
         class="break-inside-avoid group relative overflow-hidden bg-zinc-900 border border-zinc-800 rounded-sm shadow-xl transition-all duration-300 hover:border-white-300/30 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-600/5 aspect-square">
         <div class="aspect-square">
-          <baseImage :source="item"
+          <baseImage :source="`/images/projects/product/product_${index + 1}.webp`"
             :style="`w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110`"
             alt="Setup Concrete image" />
 
