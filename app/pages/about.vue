@@ -1,9 +1,10 @@
 <script setup lang="ts">
-useHead({
+useSeoMeta({
     title: 'Alexander Homes | About',
-    meta: [
-        { name: 'About', content: 'Alexander Homes About.' },
-    ],
+    description: 'About Alexander Homes',
+    ogDescription: 'About Alexander Homes',
+    ogTitle: 'Alexander Homes | About',
+    ogImage: '/images/logo.webp',
 });
 
 const principles = [
@@ -37,20 +38,6 @@ const principles = [
                         Alexander Homes was founded on a simple realization: the final layer of a home is the most
                         vulnerable, yet the most visible. We don't just paint; we protect and perfect.
                     </p>
-                </div>
-
-                <div class="relative">
-                    <div v-gsap.from="{ opacity: 0, scale: 0.9, duration: 1.5 }"
-                        class="relative sm:w-87.5 w-full h-full aspect-square bg-white/5 overflow-hidden border border-white/10 p-4">
-                        <NuxtImg class="w-full h-full object-cover opacity-60" alt="Alexander Homes Family"
-                            format="webp" width="200px" height="200px" src="/images/family.webp" loading="lazy"
-                            fetch-priority="low" />
-
-                    </div>
-                    <!-- Structural A/H Watermark behind image -->
-                    <div
-                        class="absolute -bottom-10 -left-10 text-[20vw] font-black text-white/5 z-[-1] pointer-events-none">
-                        AH</div>
                 </div>
             </header>
 

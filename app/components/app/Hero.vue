@@ -16,12 +16,6 @@
           <NuxtImg class="w-full h-full object-cover opacity-80"
           alt="Alexander Homes Logo" format="webp" width="200px" height="200px" src="/images/home_one.webp" loading="lazy"
           fetch-priority="low" />
-          <!-- Note: Make sure your img path is correct to fix the broken icon in your screenshot -->
-          <!-- <img 
-            src="/hero-painting.webp" 
-            class="w-full h-full object-cover opacity-80"
-            alt="Professional Finish"
-          /> -->
         </div>
 
       </div>

@@ -18,9 +18,12 @@ export const AppDescription: typeof import("../app/components/app/Description.vu
 export const AppFaq: typeof import("../app/components/app/Faq.vue")['default']
 export const AppHero: typeof import("../app/components/app/Hero.vue")['default']
 export const AppRecentProjects: typeof import("../app/components/app/RecentProjects.vue")['default']
+export const BaseDescription: typeof import("../app/components/base/Description.vue")['default']
 export const BaseFooter: typeof import("../app/components/base/Footer.vue")['default']
 export const BaseHeader: typeof import("../app/components/base/Header.vue")['default']
 export const BaseHeaderSection: typeof import("../app/components/base/HeaderSection.vue")['default']
+export const BaseImage: typeof import("../app/components/base/Image.vue")['default']
+export const BaseLink: typeof import("../app/components/base/Link.vue")['default']
 export const BaseNavigation: typeof import("../app/components/base/Navigation.vue")['default']
 export const UColorModeAvatar: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/color-mode/ColorModeAvatar.vue")['default']
 export const UColorModeButton: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/color-mode/ColorModeButton.vue")['default']
@@ -179,9 +182,12 @@ export const LazyAppDescription: LazyComponent<typeof import("../app/components/
 export const LazyAppFaq: LazyComponent<typeof import("../app/components/app/Faq.vue")['default']>
 export const LazyAppHero: LazyComponent<typeof import("../app/components/app/Hero.vue")['default']>
 export const LazyAppRecentProjects: LazyComponent<typeof import("../app/components/app/RecentProjects.vue")['default']>
+export const LazyBaseDescription: LazyComponent<typeof import("../app/components/base/Description.vue")['default']>
 export const LazyBaseFooter: LazyComponent<typeof import("../app/components/base/Footer.vue")['default']>
 export const LazyBaseHeader: LazyComponent<typeof import("../app/components/base/Header.vue")['default']>
 export const LazyBaseHeaderSection: LazyComponent<typeof import("../app/components/base/HeaderSection.vue")['default']>
+export const LazyBaseImage: LazyComponent<typeof import("../app/components/base/Image.vue")['default']>
+export const LazyBaseLink: LazyComponent<typeof import("../app/components/base/Link.vue")['default']>
 export const LazyBaseNavigation: LazyComponent<typeof import("../app/components/base/Navigation.vue")['default']>
 export const LazyUColorModeAvatar: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/color-mode/ColorModeAvatar.vue")['default']>
 export const LazyUColorModeButton: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/color-mode/ColorModeButton.vue")['default']>

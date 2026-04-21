@@ -1,10 +1,11 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
 import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
-import { resolve, dirname, join } from 'node:path';
+import path, { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
 import { escapeHtml } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/@vue/shared/dist/shared.cjs.js';
+import fs, { promises } from 'node:fs';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/ufo/dist/index.mjs';
 import destr, { destr as destr$1 } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/destr/dist/index.mjs';
@@ -29,7 +30,6 @@ import { stringify, uneval } from 'file:///Users/mdreesen/Documents/Programming/
 import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/errx/dist/index.js';
 import { isVNode, isRef, toValue } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/vue/index.mjs';
 import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
-import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname as dirname$1, resolve as resolve$1, basename, isAbsolute } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/pathe/dist/index.mjs';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/mdreesen/Documents/Programming/business-projects/alexander-homes/node_modules/unhead/dist/server.mjs';
@@ -2477,7 +2477,22 @@ _WgABZwULjWHwodUjJe_fMmXGjg_LWVZHyQN9c39Cik,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1e2ca-MyUQVCyRDxS+48gIB266soY/Wps\"",
+    "mtime": "2026-04-21T19:21:43.708Z",
+    "size": 123594,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"70e1f-DIxZ1MTqdOKs6zYtBIJmjjIwIQk\"",
+    "mtime": "2026-04-21T19:21:43.709Z",
+    "size": 462367,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3092,10 +3107,14 @@ const _PtElHw = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
+const _lazy_ybYqoI = () => Promise.resolve().then(function () { return process_get$1; });
+const _lazy_5B5RHr = () => Promise.resolve().then(function () { return product_get$1; });
 const _lazy_qQp01j = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
   { route: '', handler: _fyR2fK, lazy: false, middleware: true, method: undefined },
+  { route: '/api/images/process', handler: _lazy_ybYqoI, lazy: true, middleware: false, method: "get" },
+  { route: '/api/images/product', handler: _lazy_5B5RHr, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_qQp01j, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
   { route: '/api/_nuxt_icon/:collection', handler: _tcHu3g, lazy: false, middleware: false, method: undefined },
@@ -3363,6 +3382,40 @@ const styles = {};
 const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: styles
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const process_get = defineEventHandler((event) => {
+  const imagesDir = path.resolve(process.cwd(), "public/images/projects/process");
+  try {
+    const files = fs.readdirSync(imagesDir);
+    return files.filter(
+      (file) => /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(file)
+    ).map((file) => `/images/projects/process/${file}`);
+  } catch (e) {
+    return [];
+  }
+});
+
+const process_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: process_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const product_get = defineEventHandler((event) => {
+  const imagesDir = path.resolve(process.cwd(), "public/images/projects/product");
+  try {
+    const files = fs.readdirSync(imagesDir);
+    return files.filter(
+      (file) => /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(file)
+    ).map((file) => `/images/projects/product/${file}`);
+  } catch (e) {
+    return [];
+  }
+});
+
+const product_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: product_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

@@ -1,10 +1,11 @@
 <!-- pages/index.vue -->
 <script setup lang="ts">
-useHead({
-  title: 'Alexander Homes | Home',
-  meta: [
-    { name: 'Home', content: 'Alexander Homes Home.' },
-  ],
+useSeoMeta({
+    title: 'Alexander Homes | Main',
+    description: 'Main Alexander Homes',
+    ogDescription: 'Main Alexander Homes',
+    ogTitle: 'Alexander Homes | Main',
+    ogImage: '/images/logo.webp',
 });
 </script>
 <template>

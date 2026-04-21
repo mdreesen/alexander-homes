@@ -1,9 +1,10 @@
 <script setup lang="ts">
-useHead({
-  title: 'Alexander Homes | Contact',
-  meta: [
-    { name: 'Contact', content: 'Alexander Homes Contact.' },
-  ],
+useSeoMeta({
+    title: 'Alexander Homes | Contact',
+    description: 'Contact Alexander Homes',
+    ogDescription: 'Contact Alexander Homes',
+    ogTitle: 'Alexander Homes | Contact',
+    ogImage: '/images/logo.webp',
 });
 
 const formData = ref({
