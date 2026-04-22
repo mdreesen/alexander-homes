@@ -1,5 +1,5 @@
 import { _ as __nuxt_component_0 } from './HeaderSection-CIirkF0C.mjs';
-import { _ as __nuxt_component_0$1 } from './Image-B-dmCJmq.mjs';
+import { _ as __nuxt_component_1 } from './Image-B6wvsNsE.mjs';
 import { defineComponent, mergeProps, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList } from 'vue/server-renderer';
 import { _ as _export_sfc, b as useSeoMeta } from './server.mjs';
@@ -45,7 +45,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const images = [1];
     return (_ctx, _push, _parent, _attrs) => {
       const _component_baseHeaderSection = __nuxt_component_0;
-      const _component_baseImage = __nuxt_component_0$1;
+      const _component_baseImage = __nuxt_component_1;
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "py-24 px-6 md:px-12 border-t border-zinc-800" }, _attrs))} data-v-c99e4588><header class="mb-20" data-v-c99e4588>`);
       _push(ssrRenderComponent(_component_baseHeaderSection, { text: "Project Process" }, null, _parent));
       _push(`</header><div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-8" data-v-c99e4588><!--[-->`);
@@ -71,4 +71,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c99e4588"]]);
 
 export { index as default };
-//# sourceMappingURL=index-WC18Rssa.mjs.map
+//# sourceMappingURL=index-B2qXtdGg.mjs.map

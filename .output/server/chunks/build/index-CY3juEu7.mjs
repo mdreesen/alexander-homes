@@ -1,7 +1,8 @@
 import { _ as __nuxt_component_0$1 } from './Header-B7huCAAA.mjs';
-import { b as useSeoMeta, _ as _export_sfc, c as __nuxt_component_2$1 } from './server.mjs';
+import { _ as __nuxt_component_1$1 } from './Image-B6wvsNsE.mjs';
 import { defineComponent, resolveDirective, mergeProps, ref, unref, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrGetDirectiveProps, ssrRenderList, ssrInterpolate, ssrRenderClass } from 'vue/server-renderer';
+import { b as useSeoMeta, _ as _export_sfc } from './server.mjs';
 import { _ as __nuxt_component_0$2 } from './HeaderSection-CIirkF0C.mjs';
 import '../nitro/nitro.mjs';
 import 'node:http';
@@ -34,23 +35,18 @@ import 'unhead/utils';
 const _sfc_main$3 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   const _component_baseHeader = __nuxt_component_0$1;
-  const _component_NuxtImg = __nuxt_component_2$1;
+  const _component_baseImage = __nuxt_component_1$1;
   const _directive_gsap = resolveDirective("gsap");
   _push(`<section${ssrRenderAttrs(mergeProps({
     id: "about",
-    class: "relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32"
+    class: "relative min-h-screen flex items-center px-6 md:px-10 pt-24 pb-6 md:pt-32"
   }, _attrs))}><div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 z-10 w-full max-w-7xl mx-auto"><div${ssrRenderAttrs(ssrGetDirectiveProps(_ctx, _directive_gsap, { x: -50, opacity: 0, duration: 1.2 }, void 0, { from: true }))}><span class="text-ah-lime font-mono text-xs tracking-widest uppercase mb-4 block">Paint &amp; Finishes</span>`);
   _push(ssrRenderComponent(_component_baseHeader, { text: "Surface.<br>Perfected." }, null, _parent));
   _push(`<p class="text-ah-grey text-lg max-w-md leading-relaxed"> Alexander Homes specializes in high-spec painting and architectural coatings. We define the final layer of your legacy. </p></div><div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10">`);
-  _push(ssrRenderComponent(_component_NuxtImg, {
-    class: "w-full h-full object-cover opacity-80",
-    alt: "Alexander Homes Logo",
-    format: "webp",
-    width: "200px",
-    height: "200px",
-    src: "/images/home_one.webp",
-    loading: "lazy",
-    "fetch-priority": "low"
+  _push(ssrRenderComponent(_component_baseImage, {
+    source: "/images/home.webp",
+    style: "w-full h-full object-cover",
+    alt: "Hahn Built Worksite"
   }, null, _parent));
   _push(`</div></div></section>`);
 }
@@ -104,7 +100,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       const _directive_gsap = resolveDirective("gsap");
       _push(`<section${ssrRenderAttrs(mergeProps({
         id: "faq",
-        class: "bg-white text-black py-32 px-6 md:px-12 border-t border-white/5"
+        class: "py-32 px-6 md:px-12 border-t border-white/5"
       }, _attrs))}><div class="max-w-4xl mx-auto"><div><span class="text-ah-lime font-mono text-xs tracking-[0.3em] uppercase mb-4 block">Information</span>`);
       _push(ssrRenderComponent(_component_baseHeaderSection, { text: "Common<br>Questions." }, null, _parent));
       _push(`<div class="h-1 w-24 bg-ah-lime"></div></div><div class="border-t border-white/10"><!--[-->`);
@@ -156,4 +152,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-BU0cKuoK.mjs.map
+//# sourceMappingURL=index-CY3juEu7.mjs.map

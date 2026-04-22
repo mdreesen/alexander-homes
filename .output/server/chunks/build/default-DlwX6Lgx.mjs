@@ -11807,123 +11807,69 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/@nuxt/ui/dist/runtime/components/Footer.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
-  __name: "Footer",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const items = [
-      {
-        label: "Figma Kit",
-        to: "https://go.nuxt.com/figma-ui",
-        target: "_blank"
-      },
-      {
-        label: "Playground",
-        to: "https://stackblitz.com/edit/nuxt-ui",
-        target: "_blank"
-      },
-      {
-        label: "Releases",
-        to: "https://github.com/nuxt/ui/releases",
-        target: "_blank"
+const _sfc_main$1 = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  const _component_UFooter = _sfc_main$2;
+  const _component_UButton = _sfc_main$8$1;
+  _push(ssrRenderComponent(_component_UFooter, _attrs, {
+    left: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<p class="text-muted text-sm"${_scopeId}>Copyright © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}</p>`);
+      } else {
+        return [
+          createVNode("p", { class: "text-muted text-sm" }, "Copyright © " + toDisplayString((/* @__PURE__ */ new Date()).getFullYear()), 1)
+        ];
       }
-    ];
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_UFooter = _sfc_main$2;
-      const _component_UNavigationMenu = _sfc_main$4;
-      const _component_UButton = _sfc_main$8$1;
-      _push(ssrRenderComponent(_component_UFooter, _attrs, {
-        left: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<p class="text-muted text-sm"${_scopeId}>Copyright © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}</p>`);
-          } else {
-            return [
-              createVNode("p", { class: "text-muted text-sm" }, "Copyright © " + toDisplayString((/* @__PURE__ */ new Date()).getFullYear()), 1)
-            ];
-          }
-        }),
-        right: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_UButton, {
-              icon: "i-simple-icons-discord",
-              color: "neutral",
-              variant: "ghost",
-              to: "https://go.nuxt.com/discord",
-              target: "_blank",
-              "aria-label": "Discord"
-            }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_component_UButton, {
-              icon: "i-simple-icons-x",
-              color: "neutral",
-              variant: "ghost",
-              to: "https://go.nuxt.com/x",
-              target: "_blank",
-              "aria-label": "X"
-            }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_component_UButton, {
-              icon: "i-simple-icons-github",
-              color: "neutral",
-              variant: "ghost",
-              to: "https://github.com/nuxt/nuxt",
-              target: "_blank",
-              "aria-label": "GitHub"
-            }, null, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(_component_UButton, {
-                icon: "i-simple-icons-discord",
-                color: "neutral",
-                variant: "ghost",
-                to: "https://go.nuxt.com/discord",
-                target: "_blank",
-                "aria-label": "Discord"
-              }),
-              createVNode(_component_UButton, {
-                icon: "i-simple-icons-x",
-                color: "neutral",
-                variant: "ghost",
-                to: "https://go.nuxt.com/x",
-                target: "_blank",
-                "aria-label": "X"
-              }),
-              createVNode(_component_UButton, {
-                icon: "i-simple-icons-github",
-                color: "neutral",
-                variant: "ghost",
-                to: "https://github.com/nuxt/nuxt",
-                target: "_blank",
-                "aria-label": "GitHub"
-              })
-            ];
-          }
-        }),
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_UNavigationMenu, {
-              items,
-              variant: "link"
-            }, null, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(_component_UNavigationMenu, {
-                items,
-                variant: "link"
-              })
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-    };
-  }
-});
+    }),
+    right: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_UButton, {
+          icon: "i-simple-icons-facebook",
+          color: "neutral",
+          variant: "ghost",
+          to: "https://www.facebook.com/p/Alexander-Homes-100093503735484/",
+          target: "_blank",
+          "aria-label": "Facebook"
+        }, null, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_UButton, {
+          icon: "i-simple-icons-instagram",
+          color: "neutral",
+          variant: "ghost",
+          to: "https://www.instagram.com/alexanderhomespaint/",
+          target: "_blank",
+          "aria-label": "Instagram"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_UButton, {
+            icon: "i-simple-icons-facebook",
+            color: "neutral",
+            variant: "ghost",
+            to: "https://www.facebook.com/p/Alexander-Homes-100093503735484/",
+            target: "_blank",
+            "aria-label": "Facebook"
+          }),
+          createVNode(_component_UButton, {
+            icon: "i-simple-icons-instagram",
+            color: "neutral",
+            variant: "ghost",
+            to: "https://www.instagram.com/alexanderhomespaint/",
+            target: "_blank",
+            "aria-label": "Instagram"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/base/Footer.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const __nuxt_component_1 = Object.assign(_sfc_main$1, { __name: "BaseFooter" });
+const __nuxt_component_1 = /* @__PURE__ */ Object.assign(_export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1]]), { __name: "BaseFooter" });
 const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_baseNavigation = __nuxt_component_0;
@@ -11943,4 +11889,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-CRzk_qMi.mjs.map
+//# sourceMappingURL=default-DlwX6Lgx.mjs.map

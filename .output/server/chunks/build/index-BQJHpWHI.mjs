@@ -1,5 +1,5 @@
-import { _ as __nuxt_component_0 } from './Image-B-dmCJmq.mjs';
-import { _ as __nuxt_component_0$1 } from './Header-B7huCAAA.mjs';
+import { _ as __nuxt_component_1 } from './Image-B6wvsNsE.mjs';
+import { _ as __nuxt_component_0 } from './Header-B7huCAAA.mjs';
 import { _ as _export_sfc, u as useHead, a as __nuxt_component_0$2 } from './server.mjs';
 import { defineComponent, ref, mergeProps, unref, withCtx, createVNode, toDisplayString, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
@@ -57,8 +57,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     ];
     const activeBg = ref(projects[0].img);
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_baseImage = __nuxt_component_0;
-      const _component_baseHeader = __nuxt_component_0$1;
+      const _component_baseImage = __nuxt_component_1;
+      const _component_baseHeader = __nuxt_component_0;
       const _component_nuxt_link = __nuxt_component_0$2;
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "bg-ah-navy min-h-screen text-ah-white pt-40 pb-20 relative overflow-hidden" }, _attrs))} data-v-1278253a><div class="fixed inset-0 z-0 transition-all duration-1000 ease-in-out opacity-20 grayscale pointer-events-none" data-v-1278253a>`);
       _push(ssrRenderComponent(_component_baseImage, {
@@ -105,4 +105,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1278253a"]]);
 
 export { index as default };
-//# sourceMappingURL=index-CvFD2klj.mjs.map
+//# sourceMappingURL=index-BQJHpWHI.mjs.map

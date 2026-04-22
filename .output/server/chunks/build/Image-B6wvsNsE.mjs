@@ -40,7 +40,7 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/base/Image.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const __nuxt_component_0 = Object.assign(_sfc_main, { __name: "BaseImage" });
+const __nuxt_component_1 = Object.assign(_sfc_main, { __name: "BaseImage" });
 
-export { __nuxt_component_0 as _ };
-//# sourceMappingURL=Image-B-dmCJmq.mjs.map
+export { __nuxt_component_1 as _ };
+//# sourceMappingURL=Image-B6wvsNsE.mjs.map

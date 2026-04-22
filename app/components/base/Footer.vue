@@ -1,23 +1,4 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
-
-const items: NavigationMenuItem[] = [
-  {
-    label: 'Figma Kit',
-    to: 'https://go.nuxt.com/figma-ui',
-    target: '_blank'
-  },
-  {
-    label: 'Playground',
-    to: 'https://stackblitz.com/edit/nuxt-ui',
-    target: '_blank'
-  },
-  {
-    label: 'Releases',
-    to: 'https://github.com/nuxt/ui/releases',
-    target: '_blank'
-  }
-]
 </script>
 
 <template>
@@ -26,32 +7,22 @@ const items: NavigationMenuItem[] = [
       <p class="text-muted text-sm">Copyright © {{ new Date().getFullYear() }}</p>
     </template>
 
-    <UNavigationMenu :items="items" variant="link" />
-
     <template #right>
       <UButton
-        icon="i-simple-icons-discord"
+        icon="i-simple-icons-facebook"
         color="neutral"
         variant="ghost"
-        to="https://go.nuxt.com/discord"
+        to="https://www.facebook.com/p/Alexander-Homes-100093503735484/"
         target="_blank"
-        aria-label="Discord"
+        aria-label="Facebook"
       />
       <UButton
-        icon="i-simple-icons-x"
+        icon="i-simple-icons-instagram"
         color="neutral"
         variant="ghost"
-        to="https://go.nuxt.com/x"
+        to="https://www.instagram.com/alexanderhomespaint/"
         target="_blank"
-        aria-label="X"
-      />
-      <UButton
-        icon="i-simple-icons-github"
-        color="neutral"
-        variant="ghost"
-        to="https://github.com/nuxt/nuxt"
-        target="_blank"
-        aria-label="GitHub"
+        aria-label="Instagram"
       />
     </template>
   </UFooter>

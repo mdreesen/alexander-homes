@@ -1,5 +1,5 @@
 <template>
-      <section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 md:pt-32">
+      <section id="about" class="relative min-h-screen flex items-center px-6 md:px-10 pt-24 pb-6 md:pt-32">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 z-10 w-full max-w-7xl mx-auto">
         
         <div v-gsap.from="{ x: -50, opacity: 0, duration: 1.2 }">
@@ -13,9 +13,7 @@
 
         <!-- Image Container -->
         <div class="relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5 bg-white/5 rounded-sm overflow-hidden border border-white/10">
-          <NuxtImg class="w-full h-full object-cover opacity-80"
-          alt="Alexander Homes Logo" format="webp" width="200px" height="200px" src="/images/home_one.webp" loading="lazy"
-          fetch-priority="low" />
+          <baseImage source="/images/home.webp" :style="'w-full h-full object-cover'" alt="Hahn Built Worksite" />
         </div>
 
       </div>

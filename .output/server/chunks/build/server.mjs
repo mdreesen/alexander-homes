@@ -14035,12 +14035,12 @@ const _routes = [
   {
     name: "projects-process",
     path: "/projects/process",
-    component: () => import('./index-DT3uFQo9.mjs')
+    component: () => import('./index-BChOe0JJ.mjs')
   },
   {
     name: "projects-product",
     path: "/projects/product",
-    component: () => import('./index-WC18Rssa.mjs')
+    component: () => import('./index-B2qXtdGg.mjs')
   },
   {
     name: "about",
@@ -14055,12 +14055,12 @@ const _routes = [
   {
     name: "projects",
     path: "/projects",
-    component: () => import('./index-CvFD2klj.mjs')
+    component: () => import('./index-BQJHpWHI.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BU0cKuoK.mjs')
+    component: () => import('./index-CY3juEu7.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -21703,7 +21703,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = Object.assign(_sfc_main$3, { __name: "UApp" });
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-CRzk_qMi.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-DlwX6Lgx.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
