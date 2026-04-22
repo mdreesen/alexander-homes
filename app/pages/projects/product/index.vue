@@ -15,8 +15,8 @@ const images = [1]
 
     <header class="mb-20">
       <baseHeaderSection text="Project Process" />
-      <!-- <baseDescription
-        text="From residential foundations to complex commercial scale, Alexander Homes structures defines endurance with setup." /> -->
+      <baseDescription
+      text="Integrated structural solutions from grade-level residential to high-capacity commercial scale." />
     </header>
 
     <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-8">

@@ -14035,12 +14035,12 @@ const _routes = [
   {
     name: "projects-process",
     path: "/projects/process",
-    component: () => import('./index-BChOe0JJ.mjs')
+    component: () => import('./index-DrfvGInl.mjs')
   },
   {
     name: "projects-product",
     path: "/projects/product",
-    component: () => import('./index-B2qXtdGg.mjs')
+    component: () => import('./index-BcSI2wek.mjs')
   },
   {
     name: "about",
@@ -14055,7 +14055,7 @@ const _routes = [
   {
     name: "projects",
     path: "/projects",
-    component: () => import('./index-BQJHpWHI.mjs')
+    component: () => import('./index-BiRYIu7h.mjs')
   },
   {
     name: "index",

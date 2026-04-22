@@ -1,1 +1,0 @@
-import{f as t,o as n,c as a}from"./JnCIdiSG.js";const r=["innerHTML"],c=t({__name:"Header",props:{text:{type:String,default:"One"}},setup(e){return(o,s)=>(n(),a("h1",{class:"text-[clamp(2.5rem,8vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-8",innerHTML:e.text},null,8,r))}}),m=Object.assign(c,{__name:"BaseHeader"});export{m as _};

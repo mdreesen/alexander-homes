@@ -1,9 +1,10 @@
 <script setup lang="ts">
-useHead({
-  title: 'Alexander Homes | Projects',
-  meta: [
-    { name: 'Projects', content: 'Alexander Homes Projects.' },
-  ],
+useSeoMeta({
+    title: 'Alexander Homes | Projects',
+    description: 'Projects Alexander Homes',
+    ogDescription: 'Projects Alexander Homes',
+    ogTitle: 'Alexander Homes | Projects',
+    ogImage: '/images/logo.webp',
 });
 
 const projects = [
